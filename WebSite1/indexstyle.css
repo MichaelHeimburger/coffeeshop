@@ -1,0 +1,146 @@
+﻿body {
+    background: linear-gradient(green, white);
+}
+.container{
+    display:grid;
+    grid-template-rows: 300px 900px 900px;
+    width:100%;
+    margin-top: 6rem;
+    margin-bottom:2rem;
+    
+}
+.header{
+    background-color:lightgrey;
+    display:flex;
+    grid-row:1 span 1;
+    flex-direction:row;
+    justify-content:flex-start;
+    color:inherit;
+}
+.header > img{
+    max-height:100%;
+    
+    width:300px;
+
+}
+    .header > a {
+        flex-grow:1;
+        align-self: flex-end;
+        color: #3d3a35;
+        font-family: Lato,Helvetica,Arial,sans-serif;
+        font-size: 6rem;
+        line-height: 1.714286;
+        text-decoration: none;
+    }
+    .header> a:hover{
+        background-color:darkgray;
+    }
+.contentOne{
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+.contentTwo{
+    background-color:aliceblue;
+}
+
+
+
+
+
+
+/*carousel start*/
+
+.carousel-wrapper {
+    height: 80%;
+    display:flex;
+    flex-direction:row;
+    position:relative;
+  
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+
+
+Select every element
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('/images/greencoffee.jpg');
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('/images/big coffee.jpg');
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('/images/blackcoffee.jpg');
+    background-size: cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+    /*carousel end*/
+
+
