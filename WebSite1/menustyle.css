@@ -1,0 +1,113 @@
+﻿body {
+    background: linear-gradient(green,darkgreen)
+}
+.container {
+    display: grid;
+    grid-template-rows: 300px repeat(5, 500px);
+    width: 100%;
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.header {
+    background-color: lightgrey;
+    display: flex;
+    grid-row: 1 span 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: inherit;
+}
+
+
+      
+
+        
+    }
+    .header > a {
+        flex-grow: 1;
+        letter-spacing: 8px;
+        align-self: flex-end;
+        color: #3d3a35;
+        font-family: Lato,Helvetica,Arial,sans-serif;
+        font-size: 6rem;
+        line-height: 1.714286;
+        text-decoration: none;
+        height:300px;
+        width:300px;
+    }
+        .header > a:hover {
+            background-color: darkgray;
+        }
+        img{
+            width:500px;
+            height:500px;
+            min-width:500px
+        }
+.green {
+    display: flex;
+    height: 500px;
+    letter-spacing: 3px;
+    align-self: flex-end;
+    color: #3d3a35;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-size: 4rem;
+    line-height: 1.714286;
+    text-decoration: none;
+    background-color: white;
+}
+.green > img{
+    width:500px;
+    min-width:500px
+}
+    .yellow {
+        background-color: aliceblue;
+        display: flex;
+        height: 500px;
+        letter-spacing: 3px;
+        align-self: flex-end;
+        color: #3d3a35;
+        font-family: Lato,Helvetica,Arial,sans-serif;
+        font-size: 4rem;
+        line-height: 1.714286;
+        text-decoration: none;
+    }
+    .yellow > img {
+        height:500px
+    }
+.black {
+    background-color: white;
+    display: flex;
+    height: 500px;
+    letter-spacing: 3px;
+    align-self: flex-end;
+    color: #3d3a35;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-size:4rem;
+    line-height: 1.714286;
+    text-decoration: none;
+}
+
+.big {
+    background-color: aliceblue;
+    display: flex;
+    height: 500px;
+    letter-spacing: 3px;
+    align-self: flex-end;
+    color: #3d3a35;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-size: 4rem;
+    line-height: 1.714286;
+    text-decoration: none;
+}
+.red {
+    display: flex;
+    height: 500px;
+    letter-spacing: 3px;
+    align-self: flex-end;
+    color: #3d3a35;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-size: 4rem;
+    line-height: 1.714286;
+    text-decoration: none;
+    background-color: white;
+}

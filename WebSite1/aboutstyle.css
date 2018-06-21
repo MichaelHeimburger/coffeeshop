@@ -1,0 +1,50 @@
+﻿body {
+    background: linear-gradient(green,darkgreen)
+}
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 300px 900px 900px;
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.header {
+    background-color: lightgrey;
+    display: flex;
+    grid-row: 1 span 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: inherit;
+}
+
+    .header > a > img {
+        height: 300px;
+        width: 300px;
+        align-content: stretch;
+        flex: 0;
+    }
+
+    .header > a {
+        flex-grow: 1;
+        letter-spacing: 8px;
+        align-self: flex-end;
+        color: #3d3a35;
+        font-family: Lato,Helvetica,Arial,sans-serif;
+        font-size: 6rem;
+        line-height: 1.714286;
+        text-decoration: none;
+        height:300px
+    }
+
+        .header > a:hover {
+            background-color: darkgray;
+        }
+
+.aboutOne{
+    background-color:aliceblue;
+
+}
+.aboutTwo{
+    background-color:white;
+}
